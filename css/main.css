@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background-cover {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.background-cover-tablet {
+  display: none;
+}
+
+.background-cover-mobile {
+  display: none;
+}
+
+.main-container {
+  width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.logo {
+  position: relative;
+  width: 7%;
+  margin-top: 10px;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section .hero-text {
+  width: 50%;
+  margin-top: 5%;
+}
+
+.hero-section .hero-text h1 {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-section .hero-text h1 .smile-emoji {
+  width: 8%;
+}
+
+.hero-section .hero-text .first-paragraph {
+  color: white;
+  font-weight: 400;
+  margin-top: 7%;
+  font-family: 'Sofia Pro', sans-serif;
+  padding: 0 44% 0 0;
+}
+
+.hero-section .hero-text .second-paragraph {
+  color: white;
+  font-weight: 400;
+  margin-top: 5%;
+  font-family: 'Sofia Pro', sans-serif;
+  margin-bottom: 5%;
+}
+
+.hero-section .hero-text span {
+  color: #33E18F;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-section .hero-text .companies .kjk-image {
+  width: 100%;
+}
+
+.hero-section .hero-text .form-control input {
+  padding: 15px 25px;
+  border: 1px solid #33E18F;
+  border-radius: 10px 0 0 10px;
+  font-family: 'Sofia Pro', sans-serif;
+}
+
+.hero-section .hero-text .form-control button {
+  padding: 16px 20px;
+  background-color: #33E18F;
+  border: 1px solid #33E18F;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  font-family: 'Sofia Pro', sans-serif;
+  margin-left: -4px;
+  cursor: pointer;
+}
+
+.hero-section .hero-picture {
+  margin-top: -5%;
+}
+
+.hero-section .hero-picture .mock-ups {
+  display: none;
+}
+
+.hero-section .hero-picture .mock-ups-mobile {
+  display: none;
+}
+
+.companies-app {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.companies-app .companies .kjk-image {
+  width: 20%;
+}
+
+.companies-app .companies .kjk-mobile-logo {
+  display: none;
+}
+
+.companies-app .companies .shrewd-mobile-logo {
+  display: none;
+}
+
+.companies-app .app p {
+  color: white;
+  font-family: 'Sofia Pro', sans-serif;
+  margin-left: 50%;
+}
+
+.companies-app .app .apps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.companies-app .app .apps .google-play,
+.companies-app .app .apps .apple-store {
+  padding: 10px;
+}
+
+.companies-app .app .apps .google-play-tablet,
+.companies-app .app .apps .apple-store-tablet {
+  display: none;
+}
+
+.companies-app .app .apps .google-play-mobile,
+.companies-app .app .apps .apple-logo-mobile {
+  display: none;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .background-cover {
+    display: none;
+  }
+  .background-cover-mobile {
+    display: none;
+  }
+  .logo {
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  .background-cover-tablet {
+    height: 101vh;
+    width: 101%;
+    position: absolute;
+    display: block;
+  }
+  .hero-section {
+    margin-left: 3%;
+    width: 100%;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 2.1rem;
+  }
+  .hero-section .hero-text .first-paragraph {
+    margin-top: 10%;
+  }
+  .hero-section .hero-text .second-paragraph {
+    margin-top: 10%;
+  }
+  .hero-section .hero-text .form-control input {
+    width: 50%;
+  }
+  .hero-section .hero-text .form-control button {
+    width: 50%;
+  }
+  .hero-section .hero-picture {
+    width: 50%;
+  }
+  .hero-section .hero-picture .mock-ups {
+    display: none;
+  }
+  .hero-section .hero-picture .mock-ups-tablet {
+    display: block;
+    width: 100%;
+    margin-right: 10%;
+  }
+  .hero-section .hero-picture .mock-ups-mobile {
+    display: none;
+  }
+  .companies-app .companies {
+    margin-left: 3%;
+    width: 50%;
+  }
+  .companies-app .companies .kjk-image {
+    width: 20%;
+  }
+  .companies-app .companies .shrewd-img {
+    width: 30%;
+  }
+  .companies-app .companies .kjk-mobile-logo {
+    display: none;
+  }
+  .companies-app .companies .shrewd-mobile-logo {
+    display: none;
+  }
+  .companies-app .app p {
+    margin-left: 25%;
+  }
+  .companies-app .app .apps {
+    padding: 10px;
+  }
+  .companies-app .app .apps .google-play,
+  .companies-app .app .apps .apple-store {
+    display: none;
+  }
+  .companies-app .app .apps .google-play-tablet,
+  .companies-app .app .apps .apple-store-tablet {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .companies-app .app .apps .google-play-mobile,
+  .companies-app .app .apps .apple-logo-mobile {
+    display: none;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .background-cover {
+    display: none;
+  }
+  .logo {
+    margin-left: 3%;
+    margin-top: 10%;
+  }
+  .background-cover-tablet {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: block;
+  }
+  .background-cover-mobile {
+    display: none;
+  }
+  .hero-section .hero-text {
+    width: 100%;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-section .hero-text .first-paragraph {
+    padding: 0;
+    font-size: 14px;
+  }
+  .hero-section .hero-text .second-paragraph {
+    padding: 0;
+    font-size: 12px;
+    margin-top: 10%;
+  }
+  .hero-section .hero-text .form-control {
+    width: 100%;
+  }
+  .hero-section .hero-text .form-control input {
+    padding: 10px 10px;
+    width: 55%;
+  }
+  .hero-section .hero-text .form-control button {
+    padding: 12.5px 1px;
+    width: 45%;
+    font-size: 11px;
+  }
+  .hero-section .hero-picture {
+    width: 100%;
+  }
+  .hero-section .hero-picture .mock-ups {
+    display: none;
+  }
+  .hero-section .hero-picture .mock-ups-tablet {
+    display: block;
+    width: 130%;
+    margin-left: -30%;
+  }
+  .hero-section .hero-picture .mock-ups-mobile {
+    display: none;
+  }
+  .companies-app .companies {
+    width: 50%;
+  }
+  .companies-app .companies .kjk-image {
+    width: 20%;
+  }
+  .companies-app .companies .shrewd-img {
+    width: 30%;
+  }
+  .companies-app .companies .kjk-mobile-logo {
+    display: none;
+  }
+  .companies-app .companies .shrewd-mobile-logo {
+    display: none;
+  }
+  .companies-app .app p {
+    margin-left: 25%;
+    font-size: 12px;
+  }
+  .companies-app .app .apps {
+    padding: 10px;
+  }
+  .companies-app .app .apps .google-play,
+  .companies-app .app .apps .apple-store {
+    display: none;
+  }
+  .companies-app .app .apps .google-play-tablet,
+  .companies-app .app .apps .apple-store-tablet {
+    display: block;
+    width: 50%;
+    padding: 10px;
+  }
+  .companies-app .app .apps .google-play-mobile,
+  .companies-app .app .apps .apple-logo-mobile {
+    display: none;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .background-cover {
+    display: none;
+  }
+  .logo {
+    margin-left: 10%;
+    width: 10%;
+  }
+  .background-cover-tablet {
+    display: none;
+  }
+  .background-cover-mobile {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-section .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-section .hero-text .up-h1 {
+    display: none;
+  }
+  .hero-section .hero-text .first-paragraph {
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+  }
+  .hero-section .hero-text .second-paragraph {
+    margin: 0;
+    margin-top: 5%;
+  }
+  .hero-section .hero-text .form-control {
+    margin-top: 5%;
+  }
+  .hero-section .hero-text .form-control input {
+    padding: 10px 30px;
+    width: 50%;
+  }
+  .hero-section .hero-text .form-control button {
+    padding: 11px 0px;
+    width: 50%;
+  }
+  .hero-section .hero-picture {
+    width: 100%;
+  }
+  .hero-section .hero-picture .mock-ups {
+    display: none;
+  }
+  .hero-section .hero-picture .mock-ups-tablet {
+    display: none;
+  }
+  .hero-section .hero-picture .mock-ups-mobile {
+    display: block;
+    width: 90%;
+  }
+  .companies-app {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .companies-app .companies {
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .companies-app .companies .kjk-image {
+    display: none;
+  }
+  .companies-app .companies .shrewd-img {
+    display: none;
+  }
+  .companies-app .companies .kjk-mobile-logo {
+    width: 50%;
+    display: block;
+  }
+  .companies-app .companies .shrewd-mobile-logo {
+    width: 50%;
+    display: block;
+  }
+  .companies-app .app {
+    margin-left: -5%;
+    margin-top: 10%;
+  }
+  .companies-app .app p {
+    margin-left: 20%;
+  }
+  .companies-app .app .apps {
+    padding: 0 20%;
+  }
+  .companies-app .app .apps .google-play,
+  .companies-app .app .apps .apple-store {
+    display: none;
+  }
+  .companies-app .app .apps .google-play-tablet,
+  .companies-app .app .apps .apple-store-tablet {
+    display: none;
+  }
+  .companies-app .app .apps .google-play-mobile,
+  .companies-app .app .apps .apple-logo-mobile {
+    display: block;
+    width: 30%;
+  }
+}
