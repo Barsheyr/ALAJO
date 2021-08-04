@@ -1,0 +1,461 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-cover {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.background-cover-tablet {
+    display: none;
+}
+
+.background-cover-mobile {
+    display: none;
+}
+
+.main-container {
+    width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.logo {
+    position: relative;
+    width: 7%;
+    margin-top: 10px;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .hero-text {
+        width: 50%;
+        margin-top: 5%;
+        h1 {
+            font-family: 'Sofia Pro', sans-serif;
+            font-size: 35px;
+            font-weight: 700;
+            color: white;
+            .smile-emoji {
+                width: 8%;
+            }
+        }
+        .first-paragraph {
+            color: white;
+            font-weight: 400;
+            margin-top: 7%;
+            font-family: 'Sofia Pro', sans-serif;
+            padding: 0 44% 0 0;
+        }
+        .second-paragraph {
+            color: white;
+            font-weight: 400;
+            margin-top: 5%;
+            font-family: 'Sofia Pro', sans-serif;
+            margin-bottom: 5%;
+        }
+        span {
+            color: #33E18F;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+        }
+        .companies {
+            .kjk-image {
+                width: 100%;
+            }
+        }
+        .form-control {
+            input {
+                padding: 15px 25px;
+                border: 1px solid #33E18F;
+                border-radius: 10px 0 0 10px;
+                font-family: 'Sofia Pro', sans-serif;
+            }
+            button {
+                padding: 16px 20px;
+                background-color: #33E18F;
+                border: 1px solid #33E18F;
+                border: none;
+                border-radius: 0 10px 10px 0;
+                color: white;
+                font-family: 'Sofia Pro', sans-serif;
+                margin-left: -4px;
+                cursor: pointer;
+            }
+        }
+    }
+    .hero-picture {
+        margin-top: -5%;
+        .mock-ups {
+            display: none;
+        }
+        .mock-ups-mobile {
+            display: none;
+        }
+    }
+}
+
+.companies-app {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .companies {
+        .kjk-image {
+            width: 20%;
+        }
+        .kjk-mobile-logo {
+            display: none;
+        }
+        .shrewd-mobile-logo {
+            display: none;
+        }
+    }
+    .app {
+        p {
+            color: white;
+            font-family: 'Sofia Pro', sans-serif;
+            margin-left: 50%;
+        }
+        .apps {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .google-play,
+            .apple-store {
+                padding: 10px;
+            }
+            .google-play-tablet,
+            .apple-store-tablet {
+                display: none;
+            }
+            .google-play-mobile,
+            .apple-logo-mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+    .background-cover {
+        display: none;
+    }
+    .background-cover-mobile {
+        display: none;
+    }
+    .logo {
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    .background-cover-tablet {
+        height: 101vh;
+        width: 101%;
+        position: absolute;
+        display: block;
+    }
+    .hero-section {
+        margin-left: 3%;
+        width: 100%;
+        .hero-text {
+            h1 {
+                font-size: 2.1rem;
+            }
+            .first-paragraph {
+                margin-top: 10%;
+            }
+            .second-paragraph {
+                margin-top: 10%;
+            }
+            .form-control {
+                input {
+                    width: 50%;
+                }
+                button {
+                    width: 50%;
+                }
+            }
+        }
+        .hero-picture {
+            width: 50%;
+            .mock-ups {
+                display: none;
+            }
+            .mock-ups-tablet {
+                display: block;
+                width: 100%;
+                margin-right: 10%;
+            }
+            .mock-ups-mobile {
+                display: none;
+            }
+        }
+    }
+    .companies-app {
+        .companies {
+            margin-left: 3%;
+            width: 50%;
+            .kjk-image {
+                width: 20%;
+            }
+            .shrewd-img {
+                width: 30%;
+            }
+            .kjk-mobile-logo {
+                display: none;
+            }
+            .shrewd-mobile-logo {
+                display: none;
+            }
+        }
+        .app {
+            p {
+                margin-left: 25%;
+            }
+            .apps {
+                padding: 10px;
+                .google-play,
+                .apple-store {
+                    display: none;
+                }
+                .google-play-tablet,
+                .apple-store-tablet {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                }
+                .google-play-mobile,
+                .apple-logo-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    .background-cover {
+        display: none;
+    }
+    .logo {
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+    .background-cover-tablet {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        display: block;
+    }
+    .background-cover-mobile {
+        display: none;
+    }
+    .hero-section {
+        .hero-text {
+            width: 100%;
+            h1 {
+                font-size: 1.5rem;
+            }
+            .first-paragraph {
+                padding: 0;
+                font-size: 14px;
+            }
+            .second-paragraph {
+                padding: 0;
+                font-size: 12px;
+                margin-top: 10%;
+            }
+            .form-control {
+                width: 100%;
+                input {
+                    padding: 10px 10px;
+                    width: 55%;
+                }
+                button {
+                    padding: 12.5px 1px;
+                    width: 45%;
+                    font-size: 11px;
+                }
+            }
+        }
+        .hero-picture {
+            width: 100%;
+            .mock-ups {
+                display: none;
+            }
+            .mock-ups-tablet {
+                display: block;
+                width: 130%;
+                margin-left: -30%;
+            }
+            .mock-ups-mobile {
+                display: none;
+            }
+        }
+    }
+    .companies-app {
+        .companies {
+            // margin-left: 3%;
+            width: 50%;
+            .kjk-image {
+                width: 20%;
+            }
+            .shrewd-img {
+                width: 30%;
+            }
+            .kjk-mobile-logo {
+                display: none;
+            }
+            .shrewd-mobile-logo {
+                display: none;
+            }
+        }
+        .app {
+            p {
+                margin-left: 25%;
+                font-size: 12px;
+            }
+            .apps {
+                padding: 10px;
+                .google-play,
+                .apple-store {
+                    display: none;
+                }
+                .google-play-tablet,
+                .apple-store-tablet {
+                    display: block;
+                    width: 50%;
+                    padding: 10px;
+                }
+                .google-play-mobile,
+                .apple-logo-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:480px) {
+    .background-cover {
+        display: none;
+    }
+    .logo {
+        margin-left: 10%;
+        width: 10%;
+    }
+    .background-cover-tablet {
+        display: none;
+    }
+    .background-cover-mobile {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        .hero-text {
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 1.5rem;
+            }
+            .up-h1 {
+                display: none;
+            }
+            .first-paragraph {
+                padding: 0;
+                margin: 0;
+                margin-top: 5%;
+            }
+            .second-paragraph {
+                margin: 0;
+                margin-top: 5%;
+            }
+            .form-control {
+                margin-top: 5%;
+                input {
+                    padding: 10px 30px;
+                    width: 50%;
+                }
+                button {
+                    padding: 11px 0px;
+                    width: 50%;
+                }
+            }
+        }
+        .hero-picture {
+            width: 100%;
+            .mock-ups {
+                display: none;
+            }
+            .mock-ups-tablet {
+                display: none;
+            }
+            .mock-ups-mobile {
+                display: block;
+                width: 90%;
+            }
+        }
+    }
+    .companies-app {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        .companies {
+            // margin-left: 3%;
+            margin-top: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            .kjk-image {
+                display: none;
+            }
+            .shrewd-img {
+                display: none;
+            }
+            .kjk-mobile-logo {
+                width: 50%;
+                display: block;
+            }
+            .shrewd-mobile-logo {
+                width: 50%;
+                display: block;
+            }
+        }
+        .app {
+            margin-left: -5%;
+            margin-top: 10%;
+            p {
+                margin-left: 20%;
+            }
+            .apps {
+                padding: 0 20%;
+                .google-play,
+                .apple-store {
+                    display: none;
+                }
+                .google-play-tablet,
+                .apple-store-tablet {
+                    display: none;
+                }
+                .google-play-mobile,
+                .apple-logo-mobile {
+                    display: block;
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
